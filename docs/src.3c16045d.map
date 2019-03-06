@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;AACA,aADA,QAAA,wCACA,QAAA","file":"src.3c16045d.map","sourceRoot":"../src","sourcesContent":["import 'bootstrap/dist/css/bootstrap.min.css';\nimport './index.scss';\n"]}

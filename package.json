@@ -5,9 +5,10 @@
   "repository": "https://github.com/gladchinda/gladchinda.github.io.git",
   "author": "Glad Chinda <gladxeqs@gmail.com>",
   "scripts": {
-    "build:clean": "rimraf dist .cache",
+    "build:clean": "rimraf docs dist .cache",
     "build:make": "parcel build src/index.html",
-    "build": "npm-run-all build:clean build:make",
+    "build:rename": "mv dist docs",
+    "build": "npm-run-all build:clean build:make build:rename",
     "start": "parcel src/index.html"
   },
   "devDependencies": {
