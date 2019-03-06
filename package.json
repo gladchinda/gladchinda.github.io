@@ -4,6 +4,12 @@
   "license": "MIT",
   "repository": "https://github.com/gladchinda/gladchinda.github.io.git",
   "author": "Glad Chinda <gladxeqs@gmail.com>",
+  "scripts": {
+    "build:clean": "rimraf dist .cache",
+    "build:make": "parcel build src/index.html",
+    "build": "npm-run-all build:clean build:make",
+    "start": "parcel src/index.html"
+  },
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "normalize.css": "^8.0.1",
